@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+   background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+} */
+nav{
+    padding: 1.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightcyan;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-family: Reddit Mono;
+}
+h1{
+    font-family: Reddit Mono , sans-serif;
+    text-align: center;
+    font-weight: 500;
+    margin: 1rem 0rem;
+    font-size: 40px;
+}
+h2{
+    font-size: 40px;
+}
+.cart-icon{
+    position: relative;
+}
+.cart-icon span{
+    position: absolute;
+    top: -10px;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.item-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem 3rem;
+  
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.items{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    font-family: Outfit , sans-serif;
+}
+.items h4{
+    font-size: 26px;
+    margin-bottom: 0.25rem;
+}
+.items p{
+    font-size: 18px;
+    margin-bottom: 0.15rem;
+}
+.items a{
+    color: blue;
+    text-decoration: none;
+}
+.img{
+    width: 100px;
+}
+.img img{
+    width: 100%;
+}
+
+.counter span{
+    vertical-align: text-bottom;
+    font-size: 18px;
+    margin: 0px 8px;
+}
+
+.footer{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    margin: 0px auto;
+    text-align: center;
+}
+hr{
+    margin-bottom: 1rem;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    font-family: Montserrat , sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+.btn{
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid red;
+    outline: none;
+    cursor: pointer;
+
+}
