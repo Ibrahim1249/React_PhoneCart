@@ -8,7 +8,7 @@ function Navbar({totalCart , setTotalCart}) {
     <nav>
         <h2>Cart</h2>
         <div className="cart-icon">
-         <AddShoppingCartIcon style={{"fontSize":"40px"}}/>
+         <AddShoppingCartIcon style={{"fontSize":"30px"}}/>
          <span>{totalCart}</span>
         </div>
     </nav>
