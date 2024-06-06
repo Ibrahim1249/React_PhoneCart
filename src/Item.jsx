@@ -1,7 +1,7 @@
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 
-function item({image,phoneName,price}) {
+function Item({image,phoneName,price,id,cartCount,handleCartRemove,handleIncrement,handleDecrement,index}) {
   return (
     <>
       <div className="item-container">
@@ -15,19 +15,19 @@ function item({image,phoneName,price}) {
 
           <div className="phone-details">
             <h4>{phoneName}</h4>
-            <p>{price}</p>
-            <a href="">remove</a>
+            <p>$ {price}</p>
+            <a href="" onClick={(e)=>{handleCartRemove(e,id)}}>remove</a>
           </div>
         </div>
 
         <div className="counter">
-          <ArrowBackIosNewIcon  style={{"fontSize":"18px","cursor":"pointer"}}/>
-          <span>1</span>
-          <ArrowForwardIosIcon style={{"fontSize":"18px","cursor":"pointer"}} />
+          <ArrowBackIosNewIcon  style={{"fontSize":"18px","cursor":"pointer"}} onClick={()=>handleDecrement(index)} />
+          <span>{cartCount}</span>
+          <ArrowForwardIosIcon style={{"fontSize":"18px","cursor":"pointer"}} onClick={()=>{handleIncrement(index)}}/>
         </div>
       </div>
     </>
   );
 }
 
-export default item;
+export default Item;
