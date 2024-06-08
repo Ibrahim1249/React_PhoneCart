@@ -9,10 +9,13 @@ function Cart({totalCart , setTotalCart , cart ,setCart}) {
 
  useEffect(()=>{
    let totalAmount = 0;
+   let totalCartCount=0;
     cart.forEach((cartItem)=>{
       totalAmount += parseFloat(cartItem.cartCount) * parseFloat(cartItem.price);
+      totalCartCount += cartItem.cartCount;
     })
     setTotal(totalAmount);
+    setTotalCart(totalCartCount)
  },[cart])
 
   function handleCartRemove(e, id){
@@ -20,6 +23,7 @@ function Cart({totalCart , setTotalCart , cart ,setCart}) {
     setCart(cart.filter((cartItem)=>{
        return cartItem.id !== id;
     }))
+    
   }
 
   function handleDecrement(index){
